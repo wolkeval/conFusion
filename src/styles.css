@@ -16,8 +16,6 @@ body {
 }
 
 .footer {
-  background-color: #891e2c;
-  color: floralwhite;
   margin: 0px auto;
   padding: 20px 0px 20px 0px;
 }
@@ -25,16 +23,13 @@ body {
 .jumbotron {
   padding: 70px 30px 70px 30px;
   margin: 0px auto;
-  background: #c72c41;
-  color: floralwhite;
 }
 
 .navbar-dark {
-  background-color: #891e2c;
+  background-color: black;
 }
 
 address {
   font-size: 80%;
   margin: 0px;
-  color: floralwhite;
 }
