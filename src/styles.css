@@ -1,10 +1,15 @@
 body {
+  background-color: floralwhite;
   padding: 50px 0px 0px 0px;
   z-index: 0;
 }
 
 .carousel {
-  background-color: #ddd;
+  background-color: #8a1e2c;
+}
+
+.carousel-caption {
+  color: floralwhite;
 }
 
 .carousel-item {
@@ -19,17 +24,26 @@ body {
 }
 
 .footer {
+  background-color: #8a1e2c;
+  color: floralwhite;
   margin: 0px auto;
   padding: 20px 0px 20px 0px;
 }
 
+.footer i {
+  color: floralwhite;
+}
+
 .jumbotron {
+  background-color: #c72c41;
+  color: floralwhite;
   padding: 70px 30px 70px 30px;
   margin: 0px auto;
 }
 
 .navbar-dark {
-  background-color: black;
+  background-color: #8a1e2c;
+  color: floralwhite;
 }
 
 .row-content {
