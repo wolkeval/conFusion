@@ -369,10 +369,19 @@
               class="carousel-control-next"
               href="#mycarousel"
               role="button"
-              data-slide="prev"
+              data-slide="next"
             >
               <span class="carousel-control-next-icon"></span>
             </a>
+
+            <div class="btn-group" id="carouselButton">
+              <button class="btn btn-danger btn-sm" id="carousel-pause">
+                <span class="fa fa-pause"></span>
+              </button>
+              <button class="btn btn-danger btn-sm" id="carousel-play">
+                <span class="fa fa-play"></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -534,5 +543,17 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script>
+      debugger;
+      $(document).ready(function () {
+        $("#mycarousel").carousel({ interval: 2000 });
+        $("#carousel-pause").click(function () {
+          $("#mycarousel").carousel("pause");
+        });
+        $("#carousel-play").click(function () {
+          $("#mycarousel").carousel("cycle");
+        });
+      });
+    </script>
   </body>
 </html>
