@@ -377,8 +377,8 @@
               <span class="carousel-control-next-icon"></span>
             </a>
 
-            <button class="btn btn-danger btn-sm" id="carouselButton">
-              <span class="fa fa-pause"></span>
+            <button class="btn btn-danger btn-sm" id="carousel-button">
+              <span id="carousel-button-icon" class="fa fa-pause"></span>
             </button>
           </div>
         </div>
@@ -542,31 +542,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(document).ready(function () {
-        $("#mycarousel").carousel({ interval: 2000 });
-        $("#carouselButton").click(function () {
-          // Identifies whether it is a play or a pause button
-          if ($("#carouselButton").children("span").hasClass("fa-pause")) {
-            // If the span inside #carouselButton has the class fa-pause
-            $("#mycarousel").carousel("pause"); // Pause the cycle
-            $("#carouselButton").children("span").removeClass("fa-pause"); // Remove the fa-pause class
-            $("#carouselButton").children("span").addClass("fa-play"); // Add the fa-play class
-          } else {
-            $("#mycarousel").carousel("cycle"); // Resume the cycle
-            $("#carouselButton").children("span").removeClass("fa-play");
-            $("#carouselButton").children("span").addClass("fa-pause");
-          }
-        });
-
-        $("#reserveButton").click(function () {
-          $("#reserveModal").modal("show");
-        });
-
-        $("#loginButton").click(function () {
-          $("#loginModal").modal("show");
-        });
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
