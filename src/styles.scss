@@ -63,6 +63,10 @@ body {
   padding: 10px;
 }
 
+.modal-body {
+  background-color: $background-pale;
+}
+
 // Nesting selectors
 .carousel {
   background: $background-dark;
@@ -83,4 +87,13 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px;
+}
+
+.modal-header {
+  background-color: $background-dark;
+  color: $background-pale;
+
+  .close {
+    color: $background-pale;
+  }
 }
