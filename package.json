@@ -30,6 +30,7 @@
     "usemin-cli": "^0.5.1"
   },
   "dependencies": {
+    "@popperjs/core": "^2.5.2",
     "bootstrap": "^4.5.2",
     "copyfiles": "^2.3.0",
     "imagemin-cli": "^6.0.0",
